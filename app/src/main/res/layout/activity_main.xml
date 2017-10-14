@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.h4n10.scrolldemo.MainActivity">
+
+
+    <com.example.h4n10.scrolldemo.view.ScrollByLayout
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="layout()移动" />
+
+    <com.example.h4n10.scrolldemo.view.ScrollByOffset
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="offset()移动" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.example.h4n10.scrolldemo.view.ScrollByScrollTo
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="scrollTo()移动" />
+
+    </LinearLayout>
+
+    <com.example.h4n10.scrolldemo.view.ScrollByScoller
+        android:layout_width="500dp"
+        android:layout_height="100dp"
+        android:background="@android:color/holo_blue_bright">
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_red_light" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Scroller移动" />
+
+    </com.example.h4n10.scrolldemo.view.ScrollByScoller>
+
+    <com.example.h4n10.scrolldemo.view.ScrollByViewDragHelp
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/holo_green_light">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="置顶"
+                android:textSize="24sp"
+                android:background="@android:color/holo_red_light"/>
+            <TextView
+                android:gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="删除"
+                android:textSize="24sp"
+                android:background="@android:color/holo_blue_light"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"
+            android:text="ViewDragHelp" />
+    </com.example.h4n10.scrolldemo.view.ScrollByViewDragHelp>
+
+</LinearLayout>
